@@ -169,10 +169,13 @@ def user_stats(df,city):
         user_gender_counts = df['Gender'].value_counts()
         print("Count of gender: \n{}".format(user_gender_counts))
         # Display earliest, most recent, and most common year of birth
+        # Using the min module to obtain the minimum
         year_of_birth_earliest = df['Birth Year'].min()
         print("The earliest year of birth is: {}".format(year_of_birth_earliest))
+        # Using the max module to obtain the maximum
         year_of_birth_most_recent = df['Birth Year'].max()
         print("The most recent year of birth is: {}".format(year_of_birth_most_recent))
+        # Using the module module to obtain the most frequent
         year_of_birth_most_common = df['Birth Year'].mode()[0]
         print("The most frequent year of birth is: {}".format(year_of_birth_most_common))
 
@@ -201,6 +204,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df,city)
+        # the user can see new data if required
         display_data(df)
 
 
