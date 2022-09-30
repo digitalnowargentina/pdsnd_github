@@ -172,6 +172,7 @@ def user_stats(df,city):
         # Using the min module to obtain the minimum
         year_of_birth_earliest = df['Birth Year'].min()
         print("The earliest year of birth is: {}".format(year_of_birth_earliest))
+        # Using the max module to obtain the maximum
         year_of_birth_most_recent = df['Birth Year'].max()
         print("The most recent year of birth is: {}".format(year_of_birth_most_recent))
         year_of_birth_most_common = df['Birth Year'].mode()[0]
