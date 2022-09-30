@@ -14,3 +14,4 @@ new_york_city.csv
 washington.csv
 ### Credits
 https://realpython.com/python-pandas-tricks/
+https://towardsdatascience.com/10-python-pandas-tricks-to-make-data-analysis-more-enjoyable-cb8f55af8c30
